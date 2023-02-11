@@ -1,5 +1,11 @@
-initMultiStepForm();
 
+initMultiStepForm();
+const toggleButton = document.getElementsByClassName("toggle-button")[0];
+const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+toggleButton.addEventListener("click", () => {
+  navbarLinks.classList.toggle("active");
+});
 function initMultiStepForm() {
     const progressNumber = document.querySelectorAll(".step").length;
     const slidePage = document.querySelector(".slide-page");
