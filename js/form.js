@@ -64,9 +64,14 @@ function initMultiStepForm() {
         progressCheck[current - 1].classList.add("active");
         progressText[current - 1].classList.add("active");
         current += 1;
-        setTimeout(function () {
+        // setTimeout(function () {
+        //     alert("Your Form Successfully Signed up");
+        //     location.reload();
+        // }, 800);
+
+            setTimeout(function () {
             alert("Your Form Successfully Signed up");
-            location.reload();
+            location.replace(livepage.html);
         }, 800);
     });
 

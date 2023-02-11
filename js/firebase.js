@@ -105,3 +105,36 @@ function save() {
 
   alert('Saved')
 }
+
+
+function get() {
+  var username = document.getElementById('fetchfname').value
+
+  var user_ref = database.ref('users/' + username)
+  user_ref.on('value', function(snapshot) {
+    var data = snapshot.val()
+     document.getElementById('fname').innerHTML=data.fname;
+     document.getElementById('lname').innerHTML=data.lname;
+     document.getElementById('fname1').innerHTML=data.fname;
+     document.getElementById('lname1').innerHTML=data.lname;
+     //document.getElementById('profilepic').src=data.img1;
+     document.querySelector("#profilepic").src = data.img1;
+     document.getElementById('dob').innerHTML=data.dob;
+     document.getElementById('dod').innerHTML=data.dod;
+     document.getElementById('hometown').innerHTML=data.hometown;
+     document.getElementById('age').innerHTML=data.age;
+     document.getElementById('relation').innerHTML=data.relation;
+     document.getElementById('relname').innerHTML=data.relname;
+     document.getElementById('eulogy').innerHTML=data.eulogy;
+     document.querySelector('#refimg1').src = data.img2;
+     document.querySelector('#refimg2').src = data.img2;
+     document.querySelector('#refimg3').src = data.img2;
+     document.querySelector('#refimg4').src = data.img2;
+     
+     
+
+
+
+  })
+
+}
