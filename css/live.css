@@ -10,12 +10,14 @@ hr{
   }
 
   .boxx {
-    background: linear-gradient(to right, #c2b8d8, #e9e4f0);
+    background-image: url("https://i.pinimg.com/originals/da/8f/62/da8f628d145d6f70552da8e1cd54005b.jpg");
+    background-color: #4a4646;
       margin: 2rem auto;
       width: 89%;
       height: auto;
       box-shadow: 10px 10px 10px 10px #c2b8d8;
       border-color: #c2b8d8;
+      color: white;
 
   }
 
@@ -52,5 +54,5 @@ hr{
     margin-left: 4rem;
     border: #e9e4f0;
     border-style: solid;
-    border-width: .75rem;
+    border-width: .5rem;
   }
