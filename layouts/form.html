@@ -8,7 +8,7 @@
   <!--<link rel="stylesheet" href="index.css">-->
   <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">-->
-  <link rel="stylesheet" href="..\css\form.css">
+  <link rel="stylesheet" href="../css/form.css">
   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
     <body>
         <nav class="navbar">
@@ -74,32 +74,32 @@
                 </div>-->
             </div>
             <div class="form-outer">
-                <form action="#">
+                <form>
                     <div class="page slide-page">
                         <div class="title">Basic Info:</div>
                         <div class="field">
                             <div class="label">First Name</div>
-                            <input type="text" required />
+                            <input id="fname" type="text" required />
                         </div>
                         <div class="field">
                             <div class="label">Last Name</div>
-                            <input type="text" required />
+                            <input id="lname" type="text" required />
                         </div>
                         <div class="field">
                             <div class="label">Date of Birth</div>
-                            <input type="date" required />
+                            <input id="dob"type="date" required />
                         </div>
                         <div class="field">
                             <div class="label">Date passed away</div>
-                            <input type="date" required />
+                            <input id="dod" type="date" required />
                         </div>
                         <div class="field">
                             <div class="label">Age</div>
-                            <input type="number" required />
+                            <input id="age" type="number" required />
                         </div>
                         <div class="field">
                             <div class="label">Hometown</div>
-                            <input type="text" required />
+                            <input id="hometown" type="text" required />
                         </div>
                         <div class="field">
                             <button class="firstNext next">Next</button>
@@ -109,10 +109,10 @@
                     <div class="page">
                         <div class="title">Family Tree:</div>
                         <div class="family_tree_columns">
-                         <!--<div class="field" >
+                         <div class="field" >
                              <div class="label">Relation</div>
-                                 <input type="text" style="width:40%">
-                            <select required>
+                            <!--<input type="text" style="width:40%">-->
+                            <select id="relation" required>
                                 <option>Select List</option>
                                 <option>Mother</option>
                                 <option>Father</option>
@@ -132,38 +132,16 @@
                                 <option>Friend</option>
                                 <option>Other</option>
                             </select>
-                        </div>-->
-                        <div class="field">
-                            <div class="label">Mother</div>
-                            <input type="text" required />
                         </div>
-                        <div class="field">
-                            <div class="label">Father</div>
+                        <!-- aaa -->
+                        <!-- <div class="field">
+                            <div class="label">Name</div>
                             <input type="text" required />
-                        </div>
+                        </div> -->
+                        <!-- aaa -->
                         <div class="field">
-                            <div class="label">Brother(s)</div>
-                            <input type="text" required />
-                        </div>
-                        <div class="field">
-                            <div class="label">Sister(s)</div>
-                            <input type="text" required />
-                        </div>
-                        <div class="field">
-                            <div class="label">Spouse(s)</div>
-                            <input type="text" required />
-                        </div>
-                        <div class="field">
-                            <div class="label">Son(s)</div>
-                            <input type="text" required />
-                        </div>
-                        <div class="field">
-                            <div class="label">Daughter(s)</div>
-                            <input type="text" required />
-                        </div>
-                        <div class="field">
-                            <div class="label">GrandParents</div>
-                            <input type="text" required />
+                            <div class="label">Name</div>
+                            <input id="relname" type="text" required />
                         </div>
                     </div>
                         <div class="field btns">
@@ -174,7 +152,7 @@
                     <div class="page">
                         <div class="title">Eulogy</div>
                         <div class="field">
-                            <textarea class='label' placeholder='Enter comment...' maxlength='1000' minlength='100' width="80%"> 
+                            <textarea id="eulogy" class='label' placeholder='Enter comment...' maxlength='1000' minlength='100' width="80%"> 
                               </textarea>
                                <!-- <div class="label">Email Address</div>
                             <input type="text" required />-->
@@ -196,11 +174,25 @@
                         </div>-->
                     <div class="field">
                     <div class="label">Upload Photo:</div> 
-                    <input type="file" name="pic" accept="image/*">
+                    <input id="img1" type="file" name="pic" accept="image/*">
                     </div>
                     <div class="field">
-                     <div class="label">Upload Video:</div>
-                      <input type="file" name="pic" accept="image/*">
+                            <div class="label">Caption:</div>
+                            <textarea id="img1text" class='label' placeholder='Enter comment...' maxlength='1000' minlength='100' width="80%"> 
+                              </textarea>
+                               <!-- <div class="label">Email Address</div>
+                            <input type="text" required />-->
+                        </div>
+                    <div class="field">
+                     <div  class="label">Upload Video:</div>
+                      <input id="img2" type="file" name="pic" accept="image/*">
+                        </div>
+                        <div class="field">
+                           <div class="label">Caption:</div>
+                            <textarea id="img2text"class='label' placeholder='Enter comment...' maxlength='1000' minlength='100' width="80%"> 
+                              </textarea>
+                               <!-- <div class="label">Email Address</div>
+                            <input type="text" required />-->
                         </div>
                             <!--<div class="label">Phone Number</div>
                             <input type="Number" required />
@@ -215,11 +207,11 @@
                         <div class="title">Social Links:</div>
                         <div class="field">
                             <div class="label">Social Media Link</div>
-                            <input type="url">
+                            <input id="link1" type="url">
                         </div>
                         <div class="field">
                             <div class="label">Social Media Platform</div>
-                            <select>
+                            <select id="socialtype1">
                                 <option>Select List</option>
                                 <option>Facebook</option>
                                 <option>Twitter</option>
@@ -229,11 +221,11 @@
                         </div>
                         <div class="field">
                             <div class="label">Social Media Link</div>
-                            <input type="url" required />
+                            <input id="link2" type="url" required />
                         </div>
                         <div class="field">
                             <div class="label">Social Media Platform</div>
-                            <select>
+                            <select id="socialtype2">
                                 <option>Select List</option>
                                 <option>Facebook</option>
                                 <option>Twitter</option>
@@ -243,11 +235,11 @@
                         </div>
                         <div class="field">
                             <div class="label">Social Media Link</div>
-                            <input type="url" required />
+                            <input  id="link3" type="url" required />
                         </div>
                         <div class="field">
                             <div class="label">Social Media Platform</div>
-                            <select>
+                            <select id="socialtype3">
                                 <option>Select List</option>
                                 <option>Facebook</option>
                                 <option>Twitter</option>
@@ -257,11 +249,11 @@
                         </div>
                         <div class="field">
                             <div class="label">Social Media Link</div>
-                            <input type="url">
+                            <input id="link4" type="url">
                         </div>
                         <div class="field">
                             <div class="label">Social Media Platform</div>
-                            <select>
+                            <select id="socialtype4">
                                 <option>Select List</option>
                                 <option>Facebook</option>
                                 <option>Twitter</option>
@@ -271,7 +263,8 @@
                         </div>
                         <div class="field btns">
                             <button class="prev-4 prev">Previous</button>
-                            <button class="submit">Submit</button>
+                            <button onclick="save()" class="submit2">Save</button>
+                            <button onclick="save()" class="submit">Submit</button>
                         </div>
                     </div>
 
@@ -293,7 +286,9 @@
                 </form>
             </div>
         </div>
-        <script src="..\js\form.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <script src="../js/firebase.js"></script>
+        <script src="../js/form.js"></script>
     </body>
     <footer>
         <div class="container">
