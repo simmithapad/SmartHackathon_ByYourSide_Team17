@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    overflow-x: hidden;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background: linear-gradient(to right, #c2b8d8, #e9e4f0);
+
+
+}
+
+.top {
+    background: linear-gradient(to right, #c2b8d8, #e9e4f0);
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-link {
+    color: white;
+}

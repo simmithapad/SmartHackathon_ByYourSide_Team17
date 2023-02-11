@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    overflow-x: hidden;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background: linear-gradient(to right, #c2b8d8, #e9e4f0);
+
+
+}
+
+.top {
+    background: linear-gradient(to right, #c2b8d8, #e9e4f0);
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.top>p {
+    margin-top: 4rem;
+    padding-left: 10%;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 100;
+    line-height: 6rem;
+    font-size: 6rem;
+    color: white;
+}
+
+.top>img {
+    margin-top: 4rem;
+}
+
+.qtop {
+    width: 94%;
+    height: 7rem;
+    background: linear-gradient(to right, #c2b8d8, #e9e4f0);
+    color: white;
+    text-align: center;
+
+}
+
+
+
+#quotes {
+    margin: 5rem auto;
+}
+
+.hows {
+    margin-top: 5rem;
+    background: linear-gradient(to right, #c2b8d8, #e9e4f0);
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+}
+
+.hows>img {
+    margin: 1rem auto;
+}
+
+.btn {
+    margin-top: 2rem;
+    width: 30%;
+    height: 3rem;
+}
+
+.abouts {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.abouts>h1 {
+    text-shadow: 0px 0px 3px white;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.abouts>p {
+    width: 90%;
+    margin: 2rem auto
+}
+
+.card {
+    margin-top: 5rem;
+    border: none;
+    background: linear-gradient(to right, #c2b8d8, #e9e4f0);
+}
+
+.container {
+    margin-top: 5rem;
+}
+
+#features {
+    background: linear-gradient(to right, #c2b8d8, #e9e4f0);
+    color: white;
+    
+}
+
+h1 {
+
+    font-family: 'Varela Round', sans-serif;
+}
+
+.plq {
+    margin: 7rem auto;
+}
+
+.container {
+    align-items: center;
+}
+
+#page {
+    background: linear-gradient(to right, #c2b8d8, #e9e4f0);
+    color: white;
+}
+
+.tst {
+    border-radius: 25px;
+    width: 30%;
+    height: 30rem;
+    background-color: white;
+    color: black;
+    
+
+
+}
+
+hr{
+    color: #dfb0eb;
+}
+
+.inline-image {
+    float: right; /* or right */
+    margin-right: 10px; /* or left */
+  }
+  
+  .inline-text {
+    overflow: hidden;
+  }
+  
+
+  
+  .pricing-card {
+    margin: 6% 4rem;
+    background-color: #fff;
+    border: 1px solid #ddd;  
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 0px #ddd;
+  }
+  
+  .pricing-header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .pricing-header h3 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .pricing-header h4 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .pricing-body li {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  
+  .pricing-footer {
+    margin-top: 20px;
+  }
+  
+  .pricing-button {
+    background: linear-gradient(to right, #c2b8d8, #e9e4f0);
+    color: #fff;
+    border: none;
+  }
+  
+  li{
+    list-style-type: none;
+  }
+
+  footer {
+    background: linear-gradient(to right, #c2b8d8, #e9e4f0);
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 960px;
+  }
+  
+  .footer-left p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .footer-right ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-right ul li {
+    margin-left: 15px;
+  }
+  
+  .footer-right ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 767px) {
+    .footer-content {
+      flex-wrap: wrap;
+    }
+  
+    .footer-left,
+    .footer-right {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .footer-right ul {
+      display: inline-block;
+      margin-top: 15px;
+    }
+  }
+  
