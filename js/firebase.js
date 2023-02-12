@@ -25,9 +25,12 @@ function save() {
   var hometown = document.getElementById('hometown').value
   var relation = document.getElementById('relation').value
   var relname = document.getElementById('relname').value
+var relation1 = document.getElementById('relation2').value
+  var relname1 = document.getElementById('relname2').value
   var eulogy = document.getElementById('eulogy').value
   var img1text = document.getElementById('img1text').value
   var img2text = document.getElementById('img2text').value
+  var img3text = document.getElementById('img3text').value
   var link1 = document.getElementById('link1').value
   var link2 = document.getElementById('link2').value
   var link3 = document.getElementById('link3').value
@@ -66,8 +69,11 @@ function save() {
     hometown:hometown,
     relation:relation,
     relname:relname,
+    relation1:relation1,
+    relname1:relname1,
     img1:img1,
     img2:img1,
+    img3:img1,
     eulogy:eulogy,
     img1text:img1text,
     img2text:img2text,
@@ -98,6 +104,26 @@ function save() {
                 var img2=url;
                 var updates = {
                     img2:img2,
+                }
+
+            database.ref('users/' + fname).update(updates)
+                console.log(url);
+                //document.querySelector("#image").src = url;
+            })
+            .catch(console.error);
+
+ const file3 = document.querySelector("#img3").files[0];
+        const name3 = +new Date() + "-" + file3.name;
+        const metadata3 = {
+            contentType: file3.type
+        };
+        const task3 = ref.child(name3).put(file3, metadata3);
+        task3
+            .then(snapshot => snapshot.ref.getDownloadURL())
+            .then(url => {
+                var img3=url;
+                var updates = {
+                    img3:img3,
                 }
 
             database.ref('users/' + fname).update(updates)
@@ -139,9 +165,13 @@ function get() {
      document.getElementById('relname').innerHTML=data.relname;
      document.getElementById('eulogy').innerHTML=data.eulogy;
      document.querySelector('#refimg1').src = data.img2;
-     document.querySelector('#refimg2').src = data.img2;
+     document.querySelector('#refimg2').src = data.img3;
      document.querySelector('#refimg3').src = data.img2;
-     document.querySelector('#refimg4').src = data.img2;
+     document.querySelector('#refimg4').src = data.img3;
+     document.getElementById('imgtext1').innerHTML=data.img1text;
+     document.getElementById('imgtext2').innerHTML=data.img2text;
+     document.getElementById('imgtext3').innerHTML=data.img2text;
+     document.getElementById('imgtext4').innerHTML=data.img1text;
 
     let qrCode;
     qrCode = generateQrCode(data.urlqr);
@@ -155,8 +185,8 @@ function get() {
         colorLight: "#ffffff",
         correctLevel: QRCode.CorrectLevel.H,
     });
+
     }
-     
 
 
 
