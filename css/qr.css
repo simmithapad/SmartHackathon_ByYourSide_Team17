@@ -1,0 +1,9 @@
+h1, h3 {
+    color: green;
+    }
+    body, header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
