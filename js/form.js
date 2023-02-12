@@ -81,4 +81,3 @@ function initMultiStepForm() {
         return inputsValid;
     }
 }
-
