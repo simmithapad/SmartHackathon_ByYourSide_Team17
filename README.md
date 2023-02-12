@@ -1,4 +1,4 @@
-# SmartHackathon_ByYourSide_Team17
+
 
 <br/>
 <p align="center">
@@ -89,6 +89,24 @@ We are open to feedback and improvements and hence we keep our website open sour
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+## Future Scope
+
+Here are a few ideas for the future scope of the app:
+
+Integration with social media: The app could be integrated with social media platforms such as Facebook and Twitter, allowing users to share the memorial page with their friends and followers.
+
+Virtual events: The app could allow users to host virtual events such as candlelight vigils or memorial services in honor of their loved one. These events could be accessed via the QR code and allow participants to share messages and memories.
+
+Location-based features: The app could incorporate location-based features that allow users to visit the memorial page in physical locations such as cemeteries or memorial parks. This could be done using augmented reality or geolocation technologies.
+
+Personalized keepsakes: The app could offer the option for users to purchase personalized keepsakes such as memorial pins or keychains featuring the QR code for the memorial page.
+
+Analytics and Insights: The app could provide analytics and insights into the usage and interactions with the memorial page. This information could be used to improve the user experience and provide deeper insights into the impact of the memorial page.
+
+Virtual tours: The app could allow users to create virtual tours of significant locations and events in the life of their loved one. This could be a unique and personal way to celebrate the life of their loved one and allow others to experience it in a meaningful way.
+
+These are just a few examples of the future scope for the QR-based Tribute App. The possibilities for future development are vast and could be shaped by the needs and feedback of users. The goal of the app remains the same, to provide a platform for people to pay tribute to their loved ones in a meaningful and personal way.
 
 ## Authors
 
