@@ -17,118 +17,139 @@
         <button onclick="get()" class="submit2">Save</button>
     </div>
     <div class="boxx">
-        <div class="row">
-            <br><br>
-            <h2 style="text-align: center;">In loving memory of<br><br><div id="fname">Paul</div><div id="lname"> Walker</div> </h2>
-            <div class="col-sm">
-                <img id="profilepic" class="topp"
-                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBESERgREREREREREhEREREREREPERERGBgZGRkYGBgcIS4lHB4rHxgYJjgmKy8xNjU1GiQ7QDszPy40NTEBDAwMEA8QGhISGjEhISExNDE0MTE0NDQ0MTQxNDExMTQ0MTQ0NDExMTQ0NDQ0NDQxNDE0NDE0MTE0NDE0NDExNP/AABEIALoBEAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAABAAIDBAUGB//EAEAQAAIBAgMEBwUECAYDAAAAAAECAAMRBBIhBTFBcQYiUWGBkaEHEzKxwRRCUnIjU2KCkqLC8ENjc7Lh8SQzNf/EABkBAQEBAQEBAAAAAAAAAAAAAAABAgQDBf/EACIRAQEBAQACAQMFAAAAAAAAAAABAhEDITEyQVEEEhNhcf/aAAwDAQACEQMRAD8A6qERRwkbKK0IENoAAjrRWjrQABDEBCBAFoCsfaG0CLLBlkuWLLAiyyLEVkprmqOiL+J2CD1mftzbAoWpqQHZcxYjMEXcDbidD5cZwWPxhc3zElyBne5dtdXYk6dwGkzdEy63G9MMMlxTV6pFxcAIhI/aOvpM6l03DWvRCkE5uuSLcLG1vOcmyKKjXIeyEkAWUMPnfSNRXqLanlBYG4Ay6A3tJ1ePQsJ0kw9TRyabXAAbVTfvH1tL9HHUKhISrTYqMzZXU5V3XPdPKMfUyCwurA23W3W9DK+Bxbo4dDdkZXA1AdQbkMB592+WVK9qQcY+0ztg7YpYumHTqsoAdD8SN9Re+s1LTQZaNMeRGkQImkTiTsJGywiswkDrLjrIHSBSdJSrU5qOkrVKcDGrU5Qq05t1qcoVqcIynSV2WaNRJWdIRTZZGyyyyyNlgewgQ2htCBDZWhtCIoQogIhHQpQgRCGAoooYAihmZ0ixJp4So6/FlCDuzELf1mRwu2catTE1ajAMiNlS+oIVQNPETDOJWoczA3vpwAEs4cZzk4ODa+ugsPHQNvm3U2HTcWRspAte1wZ561Jfb1xi6npylSkzZirahrkfsxFnOUBSjj4XBNjfS/LhO4odGaRQK7lm35sqjX5+sv4fYNJEKFRruI0se0TH8kek8F+7zSpWYpkbVs7A3Ataw+usCIgGrMtmFyo1sQ2YD0E9Bfo5QW5AuSNSTx7ZQbYVNbnKGOtg2oJ7Jf5YXwX5c9gMc2GrLVpHqjXKDfOlxcG2h0+hnrGHrLURaiG6uoZSOIOs8pxFbM+QUcjJZjxJXd8+M7zoY98Io4LUqKDpqobTdPXNc+pxuERhEkMYZtk0xjCSGAwiBlkTLLLCRMIFVlld1l11kDrCs+qkpVkmq6yrVpwMWqkqOk1q1OUatOEZ7rIGEuukrusI9dAhiiAhsrQgQiECALQgQwwBDaGGA20NoYoQLTJ6U0c+CrgaEUncc06w9RNiVto089F0/HTdfMWgeQ7D1fO287r8B/ZnZ4Cnu5CcFsOpeoBw0vPQ8AeqO2cnl+Xd+n+lr4eju5y41GQ4UG1zLczmN6t6zsVStMrFaDXsm3iVPZMbaK3QjiQQJm/Lc9xwmLbPUcg2uAi28z9J23QNCMIb7jWqZeQsPmDODSmwrENxOfuy2M9D6FNfCAcRUqXt3tm+s7MPnb+W6YwiSkRhE2wjMBjjAYQwyNhJTGkQIHEgcSywkTrAqOsrusuusrusDOrU5RrJNeokpVkgZNRJVdZo1UlWosD1KIGKKFER140CGA68UQEUKMN4LQ2gK8MFoYQpS2njfcqrEXVnCE2JsTu0Gp1l2UtpqMik7ldCfVR6sJm/FaxJdTryLA4Y06r3092xU630uePgNZ1uz9poFBC1HA0JVGa3lwmfhsKj4iqh1DuG9Abes0xsd75feVFp2AVUd0APEnKbnlunPqy3268S5l43Nm7dw9U5EqDPb4SCp9Zp1sYKa5jutwF5z+KwNKnSzZAKiBirgAMzkkgk8Ld3ZNJ6gaio33AuO0bzM69X03mWz2y8T0m942SmgW1yXrPTpLYcRc6+Ep4nE1XIKrTdTrem4fTnNw7PSoPgXJcsFJtYnTgO6MpbLp02LBFUm18osNOPONc4mey2OS21QCIjgWOin8p/5nV7DwAp0adjvu7WsLvvs3bpceEwek4DjIBqWUDnOyS5CKRlICdgvZf+/Sax7kiXkur/AEnjTHEQETqcKJhGmSsJGRCGmNMfaNIgRsJGwkxEjYQIHEgZZacSFxAqOsq1Ul51ld1gZdZJSq05rVUlKqkD0GEQhYQsKAjhCBDlgCECG0NoAhtFaK0BWitDaK0ASPE0s6Mn4gRruvw9ZLaKCXjzPHE0cdmPVzgXU6WI6tj4ATscC2cX7pme0LBXoJXRR7ynUClgOsUYEWJ/NltzjOju0QaAZju0uZzeTPOOvw771c26LKqjVibkcAu6/rJmQhUXccugMw9s49KxtTLBhorqTe5I032I5yV8VWCo1Qu5K3B+AAcdwvfd5zPHvNOk2ewyWOhBYWgx7gKT2CY9DblNVy2I1GrEm5PHMd/ZI9qbSD0C6G/DTtva3nF/Cdneshz73Eoi3v7xCd34t+s7ymhvdt9rAdg4+ZnE7ApD7RT4uXLtyCk7+QE7609vHmc65PLq9s/KO0BEktBaerxRFYxlkxEawhEBEaRJWEaRAjIjCJKRGkQK7LInWWmEiZYFN1kDrLrLIXSBn1ElGsk1nSVKqQO2AhAiEMKVorRQwFDBDAUUUUBRRR0BsNoYoFLa+C9/h3o3sXQhT2ONVPgwE8t2JiVph6FUEOpZTTN7hwbEXG7X6zpunHS/3IbC4V/056tSov8Agj8Kn8f+3nu86pUHyCqgJN2DcSbMfWZ3mWe2sasvp3ZwVNXU0iyqVGfKx36XIuZrJYgA4h7bgMyeV5y2yNrI6FW33sB2Hjym+lCmVDM2q2IGgFtT9PSc3ufLuz5PXpa+z0VBepZ7DTMS6r363nPbV2hTye7AW3WN10Fxu5a/WXNr7Sp00ym1gLG/G/CYGysLUxlQM2ZaKMWvr1mPfLJ96xvXbyfLQ2Ptb7PUXF1kf3TD3ahRdgrWu9uO7d2eU9GwuKp1UFSk6ujfC6m4Pd3Hunn3TKioogDSzLbne05jYm26+EqZ6T2BIz021SoP2h2941nv4r3Lm805rj26KYuwOklDFqApCVvvUXYZ9N5X8a948QJszbyIxphJjTAYwjCJI0jaA0iNIjoDAYRI2WSmNMCu6yF1lppE4gU3WVnSXnWV3WB1Iijbwgwp0UEN4BigvFeA6KNvDeAYoLzO2xtvD4NQ1Z7FvgRRmqPyXs7zYQNO84npn0wFHNhcK162q1Ko3Ue1V7X+XPdgbd6c4itdKP8A49M6dU3qsO9/u8l8zONdze/bLIz0X38/HWdT0SUVEamRcXJ13ak/UTlA950XRLErTqOG0DJTqBuFs+Qj+J7/ALhmfJO5r08N5qdXtq9HalNhUokAE66DnqPCPwuxdo1Bb3lNQBbedy6j1ncCmHTL3ayPDUWT4TYjtFxbvnPNV1Xx571yy9FXvnxNRqjfh3IOE39mYYIuVVAUDnrNR0JGuvyjKaWXSZ1bW85kct0sXMqqdAXS57OsBPP6qkMQRYgkWPCeg9MktRJO4lR4Fhf0nDbUN6hf9YKdXuDOiswHcGLDwnt4Pprm/U/VP8VkqEEMpIKkEEEggjiDwM7jZPT+oiKmIpiqV094r5HYdpFrE+U4URAz3c72HZvS7B19M5otwWtZAeT3K+t5to6sLqwYdqkMPMTwdKhEtYXHPTbNTdkYfeRih8xHDr24xjTzfAdNcVTNnZKy9lRQrW7mW3qDN3D9OcOwvUpvT1AJUrUUDib6HTlJwdQY0x1wdRqDqCNxEBkU0xhjiI0iBGxkbSRhI2ECF5A8sMJCywOihEEMKMMEMBRRRQFKG1ds4fCi9aoFYi6ovXqNyUcO82HfOS6RdNXSpUo4YKopsUaseuxYaPkG4WNxc33GcNicUzMXLFmY3Z2JZmPaSdTEiWux2r08rMCtCmtFTcB3tUqW7QPhU+c4nFYt6jl3Zndjdndi7NzJkLVCeMjM0giEwWiMIbbWXdnVLPlY2W70yeAp1QUJ5KXVrc5Uj1XX85ynkwy/WB6d0P2j7ylkc/pKXUcHeQPhPlpzBnRMltZ49gtsVKFdaqXW6oKhZbhiQMxIG8E68DrPRNn9McJUFnbIQxUt8dO+tiGGtja9yJz6xZex1+Pyyzlby6/3pBXFhYa9wtJsM6VFD03V0bVXRldSO4ic3032jUw9Amm2V6hVEPEEnUjvteecnbx7XUk6yenO0aLJ9nR1LB1DtcBEII0LHQndcDdxtOGrvewBuFRAD3G7/wBZlhMLXGYmi/vAMzZsOC6g8dVuvMWlAd1tyjS/YL7504zMzji3q6vaIMUUGbsm3mcYLwG/GECAQxj0c37t3OIJERbzEo9c6J41a2DpkElqaii9zchkAXXmMp8ZrGeeezraOWu+HY6VkzoP8xN4HNST+5PQ2masNMBhMaZFNMjYSQyNoEbCROsmaRtA24oooUYoIoBvKG29oDDYapXNrohKA8XOiD+IiXpwftK2jomFU7/01TlqqA/zHwEkK8/ZjY3JJOpJ1JJ3kyFH09JIxkeX5zbBEwxKt4nGtoDbnt84hUvvEViYQgXvMAkRxFxaMJ4xyHWBopiVy2alRa1wbq6G/eVYE+MHv9bU0ooTYKKdGmWPG2YgudQOPCWaFTFsMxqVVRvhZ6/uEP5CzAHkI9jimUg1yRuI+2Uytu/r285FX+je0a+DrZ6xZKNQMKiVXCNe1w6o5DFr2Gg1B5TJ2ltKrj8SXdgFF8iO9OmlNAdwLEC/bxPIWEOKpBUW5oKyhVCI7VGexJLErmS+77w0G6VsAgZyGqJT6pN3DkHu6isb+EftnetfuvOL4wjlcpqUggYGxxFJkFuIVXJPgLzJIsTrm1OuvW79dfOavuKYBzVkI7KdOq7HkHVB6zK04XtwJ0NpWTgY7KD3H0jBHQhMhECxwaIb5RIpjHOvK/yhvI3O/lIJ9nYw0KqVhvp1FfmoPWHitx4z264IuNQdQe6eDcJ7VsPEe8wlGp+KjTzfmCgMPMGSrF0xpjmjTIpjSNpI0jaAxpGY9pG0DdihtFChFDFaA13CgsxAVQSSdwA1JM8R23tE4nEVK5vao5yA8KY6qDu6oHjeemdP8W1LZ7hTZqrJRB/ZY3ceKqw8Z5CrXERKTGK/HtAjT68Ikb57uyaZTpoJADrfhJajaGRsbLl4mAS3Zp84LwDv3wQCI5Y0QiBewtJWFzUp0yD98VCT/AjessnDp+vp3/JXy+eS/pKOFZM36QuFt9xFdieyxZfO/hLTVqHBKzd5qpT9MjfOFQ45ECjK+drnRabBLfmax/lkWAyZ+uWUZTqiK5vppYsvneSYipTI6iOrdr1VcbjfQIvzkOFdVcFlzjXqklQdO0awNBnofq6rC281qa35gIbecyv7tNBsWADlo0VNjrao/o7lfSUICBhgivCCI9ZHA7QH3kbmNDWigIT1D2c4nPgyh/waroPyuA49Wbynl07r2X17VK9O+jJTcD8pZSf51kWPQSIwiSGRsJFMYSNhJjGEQImEiYSciMYQNqKERQoRWhtFA4H2qYgCnQpcWqPU/gUL/WZ5oQeG+d/7V/8A24f/AE63+5P+JwQ385Z8M00C40NmG8RpY8RE91N+Ec7acCJQ/fp2amK+unnGI2kdwhBOuvZ8oI6nAu+3lAQERjrxjGA9DJlMrIZYWWKTgXHORKLHxkxG78y/ORuLHxEB9Q9UyKSVN0ihBigEVpAZGYSbQGAmiWIxqmA6dV7OHtjiPxYeov8AMjfScqN00Oj2O+z4ulVJsqVAH1sMjdR7/usT4Qr2wxjCSNGNMqjMBjmjDAY0Y0eTGmBs2itDDAForQxQPLfanXviqdP9XQz+LuwPognDzrfaX/8AQP8Ao0v6pyU1EpZu3dx7u+NtY8/IxHeOcSfCecIKCOYxtPfC0A0zHEcR4Qsoy7hubh3LG0twgImNMcd8aYCWWFbSV5IvCBM27xB9YmOhifd4RNxlUK3w+UgMmqfB5SAyVBEIjRHGA1uy9tLeB0MTNfgBy08LX0ggMAGBYm3QU/rCpDGkQxGEe09GMd9owdKqTdsmRz+2nUY+JF/GaZE5L2Zk/Yqmu7Evbu6lOdeZlpEwkZEmaRmBEYwyVowwP//Z">
+        <div class="inside">
+            <div class="row">
+                <br><br>
+                <h2 style="text-align: center;">In loving memory of<br><br>
+                    <div id="fname">Paul</div>
+                    <div id="lname"> Walker</div>
+                </h2>
+                <div class="col-sm-4">
+                    <img id="profilepic" class="topp"
+                        src="data:image/jpeg;base64,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">
+                </div>
+                <div class="col-sm-4">
+
+                </div>
+                <div class="col-sm-4">
+                    <img src="../img/sample-qr.png" alt="qr-code" height="150px" width="150px">
+                    <p class="hey">A shooting star is a promise of life after death, a sign that the beauty
+                        of the universe will endure</p>
+                </div>
             </div>
-            <div class="col-sm">
-                <img src="../img/sample-qr.png" alt="qr-code" height="150px" width="150px">
-                <p class="hey">A shooting star is a promise of life after death, a sign that the beauty
-                    of the universe will endure</p>
-            </div>
-        </div>
 
 
 
 
-        <h2>About</h2>
-        <P>
-            <strong>Name </strong><div id="fname1"> Paul</div> <div id="lname1">Walker</div> <br>
-            <strong>Date of Birth </strong><div id="dob" >12 September 1973</div><br>
-            <strong>Left Us On </strong><div id="dod">30 November 2013</div><br>
-            <strong>Hometown </strong> <div id="hometown">California, United States</div><br>
-            <strong>Age </strong> <div id="age">40</div><br>
+            <h2>About</h2>
+            <P>
+                <strong>Name </strong>
+            <div id="fname1"> Paul</div>
+            <div id="lname1">Walker</div> <br>
+            <strong>Date of Birth </strong>
+            <div id="dob">12 September 1973</div><br>
+            <strong>Left Us On </strong>
+            <div id="dod">30 November 2013</div><br>
+            <strong>Hometown </strong>
+            <div id="hometown">California, United States</div><br>
+            <strong>Age </strong>
+            <div id="age">40</div><br>
 
-        </P><br>
-        <hr>
+            </P><br>
+            <hr>
 
-        <br>
+            <br>
 
 
-        <h2>Family</h2>
-        <P>
-            <strong><div id="relation">Brother</div></strong> <div id="relname">Cody Walker</div><br>
+            <h2>Family</h2>
+            <P>
+                <strong>
+                    <div id="relation">Brother</div>
+                </strong>
+            <div id="relname">Cody Walker</div><br>
             <strong>Daughter</strong> Meadow Rain Walker<br>
 
-        </P>
+            </P>
 
-        <hr>
-        <h2>Funeral Events</h2>
-        <P>
-            <strong>Place</strong> Forest Lawn, Los Angeles, California, United States<br>
-            <strong>Time</strong> 1 pm EST<br>
+            <hr>
+            <h2>Funeral Events</h2>
+            <P>
+                <strong>Place</strong> Forest Lawn, Los Angeles, California, United States<br>
+                <strong>Time</strong> 1 pm EST<br>
 
-        </P>
+            </P>
 
-        <hr>
+            <hr>
 
-        <h2>Images</h2><br><br>
-         
-        <div class="polaroid">
-            <a href=".." title="Paul Walker">
-                <img id="refimg1" height="180"
-                    src="https://cdn.motor1.com/images/mgl/QyprZ/s1/daughter-of-paul-walker-suing-porsche-over-his-death.jpg"
-                    alt="Santorini" title="Santorini" />
-            </a>
+            <h2>Images</h2><br><br>
+
+
+            <div class="card flex-row"><img class="card-img-left example-card-img-responsive"
+                    src="https://akns-images.eonline.com/eol_images/Entire_Site/20131030/rs_600x600-131130183424-600.Paul-Walker-RIP-2-jmd-113013.jpg?fit=around%7C600:600&output-quality=90&crop=600:600;center,top" />
+                <div class="card-body">
+                    <h4 class="card-title h5 h4-sm">Left image</h4>
+                    <p class="card-text">Example text</p>
+                </div>
+            </div>
+
+            <div class="card flex-row"><img class="card-img-left example-card-img-responsive"
+                src="https://akns-images.eonline.com/eol_images/Entire_Site/20131030/rs_600x600-131130183424-600.Paul-Walker-RIP-2-jmd-113013.jpg?fit=around%7C600:600&output-quality=90&crop=600:600;center,top" />
+            <div class="card-body">
+                <h4 class="card-title h5 h4-sm">Left image</h4>
+                <p class="card-text">Example text</p>
+            </div>
         </div>
 
-        <div class="polaroid">
-            <a href=".." title="We Miss You">
-                <img  id="refimg2"height="180"
-                    src="https://images.indianexpress.com/2021/12/paul-walker.jpeg"
-                    alt="Santorini" title="Santorini" />
-            </a>
+        <div class="card flex-row"><img class="card-img-left example-card-img-responsive"
+            src="https://akns-images.eonline.com/eol_images/Entire_Site/20131030/rs_600x600-131130183424-600.Paul-Walker-RIP-2-jmd-113013.jpg?fit=around%7C600:600&output-quality=90&crop=600:600;center,top" />
+        <div class="card-body">
+            <h4 class="card-title h5 h4-sm">Left image</h4>
+            <p class="card-text">Example text</p>
         </div>
+    </div>
 
-        <div class="polaroid">
-            <a href=".." title="See You Again">
-                <img id="refimg3" height="180"
-                    src="https://www.pinkvilla.com/english/images/2022/09/1663021326_gettyimages-85408674.jpg"
-                    alt="Santorini" title="Santorini" />
-            </a>
-        </div>
+    <div class="card flex-row"><img class="card-img-left example-card-img-responsive"
+        src="https://akns-images.eonline.com/eol_images/Entire_Site/20131030/rs_600x600-131130183424-600.Paul-Walker-RIP-2-jmd-113013.jpg?fit=around%7C600:600&output-quality=90&crop=600:600;center,top" />
+    <div class="card-body">
+        <h4 class="card-title h5 h4-sm">Left image</h4>
+        <p class="card-text">Example text</p>
+    </div>
+</div>
 
+            <hr>
 
-        <div class="polaroid">
-            <a href=".." title="Forever in our Hearts">
-                <img id="refimg4" height="180"
-                    src="https://www.the-sun.com/wp-content/uploads/sites/6/2023/02/NINTCHDBPICT000668509728.jpg"
-                    alt="Santorini" title="Santorini" />
-            </a>
-        </div>
-
-        <hr>
-
-        <h2>Videos</h2>
-        <P>
+            <h2>Videos</h2>
+            <P>
 
 
-        </P>
-        <hr>
+            </P>
+            <hr>
 
-        <h2>Tribute Messages</h2><br /><br>
-        <P style="width:85%">
-        <div id="eulogy">
-            “You said a lot of tough guys will tell you to wait outside of the delivery room,” he continued. “But
-            that’s wrong. Go in there, actually cut the umbilical cord and it will be the best day of your life.
+            <h2>Tribute Messages</h2><br /><br>
+            <P style="width:75%">
+            <div id="eulogy">
+                “You said a lot of tough guys will tell you to wait outside of the delivery room,” he continued. “But
+                that’s wrong. Go in there, actually cut the umbilical cord and it will be the best day of your life.
 
-            “You of course, was talking from experience, having already an angel of your own. It’s been eight years
-            today... and not a day goes by that I don’t reflect of the brotherhood we were blessed to have... but
-            you know that. Tragedies in life are always followed by life’s blessings if you just stay open and have
-            faith.”
-            <br>
-            - Vin Diesel
-        </div>
-        </P>
-        <hr><br>
+                “You of course, was talking from experience, having already an angel of your own. It’s been eight years
+                today... and not a day goes by that I don’t reflect of the brotherhood we were blessed to have... but
+                you know that. Tragedies in life are always followed by life’s blessings if you just stay open and have
+                faith.”
+                <br>
+                - Vin Diesel
+            </div>
+            </P>
+            <hr><br>
 
-        <div class="page">
-            <h3><span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
-                    Administrator- </span><br><br>Aastha Singhal</h3>
+            <button type="button" class="btn btn-outline-light">Add your memories</button>
+
             <br><br>
+
+            <div class="page">
+                <h3><span style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                        Administrator- </span><br><br>Aastha Singhal</h3>
+                <br><br>
+            </div>
         </div>
     </div>
 
