@@ -1,5 +1,11 @@
-initMultiStepForm();
 
+initMultiStepForm();
+const toggleButton = document.getElementsByClassName("toggle-button")[0];
+const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+toggleButton.addEventListener("click", () => {
+  navbarLinks.classList.toggle("active");
+});
 function initMultiStepForm() {
     const progressNumber = document.querySelectorAll(".step").length;
     const slidePage = document.querySelector(".slide-page");
@@ -58,9 +64,14 @@ function initMultiStepForm() {
         progressCheck[current - 1].classList.add("active");
         progressText[current - 1].classList.add("active");
         current += 1;
-        setTimeout(function () {
+        // setTimeout(function () {
+        //     alert("Your Form Successfully Signed up");
+        //     location.reload();
+        // }, 800);
+
+            setTimeout(function () {
             alert("Your Form Successfully Signed up");
-            location.reload();
+            location.replace(livepage.html);
         }, 800);
     });
 
