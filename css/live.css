@@ -26,6 +26,8 @@ hr{
       margin-left: 1.3rem;
       margin-bottom: 2rem;
       margin-top: 2rem;
+      max-width: 300px;
+      max-height: 250px;
   }
 
   .name {
