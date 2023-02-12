@@ -36,6 +36,9 @@ function save() {
   var socialtype2 = document.getElementById('socialtype2').value
   var socialtype3 = document.getElementById('socialtype3').value
   var socialtype4 = document.getElementById('socialtype4').value
+              //var fname = document.getElementById('fname').value
+            var urlqr = "livepage.html";
+            urlqr=urlqr+"?fetchname="+fname;
  //var password = document.getElementById('password').value
   //var username = document.getElementById('username').value
   //var say_something = document.getElementById('say_something').value
@@ -76,6 +79,7 @@ function save() {
     socialtype2:socialtype2,
     socialtype3:socialtype3,
     socialtype4:socialtype4,
+    urlqr:urlqr
   })
                 console.log(url);
                 //document.querySelector("#image").src = url;
@@ -108,8 +112,16 @@ function save() {
 
 
 function get() {
-  var username = document.getElementById('fetchfname').value
-
+    let urlString = document.URL;
+        let paramString = urlString.split('?')[1];
+        let queryString = new URLSearchParams(paramString);
+        for(let pair of queryString.entries()) {
+            console.log("Key is:" + pair[0]);
+            console.log("Value is:" + pair[1]);
+            var valueuser=pair[1];
+    }
+  //var username = document.getElementById('fetchfname').value
+  var username=valueuser
   var user_ref = database.ref('users/' + username)
   user_ref.on('value', function(snapshot) {
     var data = snapshot.val()
@@ -130,7 +142,20 @@ function get() {
      document.querySelector('#refimg2').src = data.img2;
      document.querySelector('#refimg3').src = data.img2;
      document.querySelector('#refimg4').src = data.img2;
-     
+
+    let qrCode;
+    qrCode = generateQrCode(data.urlqr);
+
+    function generateQrCode(qrContent) {
+    return new QRCode("qr-code", {
+        text: qrContent,
+        width: 150,
+        height: 150,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H,
+    });
+    }
      
 
 

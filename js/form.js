@@ -68,10 +68,12 @@ function initMultiStepForm() {
         //     alert("Your Form Successfully Signed up");
         //     location.reload();
         // }, 800);
-
+            var fname = document.getElementById('fname').value
+            var url = "livepage.html";
+            url=url+"?fetchname="+fname;
             setTimeout(function () {
             alert("Your Form Successfully Signed up");
-            location.replace(livepage.html);
+            location.replace(url);
         }, 800);
     });
 
