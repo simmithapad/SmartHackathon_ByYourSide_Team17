@@ -28,7 +28,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #b9add2;
+     background: #834d9b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d04ed6, #834d9b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d04ed6, #834d9b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
     color: #341b2e;
   }
   
@@ -88,7 +91,10 @@ body {
 }
 .container {
     width: /*var(--containerWidth)*/ 900px;
-    background: #c2b8d8;
+    background: #834d9b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #d04ed6, #834d9b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #d04ed6, #834d9b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     text-align: center;
     border-radius: 5px;
     padding: 50px 35px 10px 35px;
